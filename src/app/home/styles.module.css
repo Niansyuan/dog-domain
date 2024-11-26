@@ -5,15 +5,16 @@
     position: relative;
     overflow: hidden;
     width: 100%;
+    max-width: 600px;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px;
-    gap: 40px;
+    padding: 210px 40px;
+    justify-content: space-between;
     background-color: #fef4e2;
     color:#00000088;
+    box-shadow: #fef4e2 0px 4px 16px, #fef4e2 0px 8px 32px;
 }
 
 .title {
@@ -36,7 +37,7 @@
 .image {
     width: 150px;
     height: 120px;
-    background: no-repeat url('/images/with-dog.jpg') center/contain;
+    background: no-repeat url('/images/with-dog.jpg') 50% 0px/160px;
     flex-shrink: 0;
 }
 
@@ -44,50 +45,37 @@
     font-size: 20px;
 }
 
-.circle-1 {
+.pic-1 {
     position: absolute;
-    top: -40px;
-    right: -40px;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background-color: #fdba1c;
-    filter: blur(80px);
-    z-index: var(--z-index-circle);
+    top: -30px;
+    left: -70px;
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: multiply;
+    background: no-repeat url('/images/pic-1.png') center/contain;
+    transform: rotate(15deg);
+    filter: opacity(0.8);
 }
 
-.circle-2 {
+.pic-2 {
     position: absolute;
-    bottom: -80px;
-    left: -80px;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background-color: #fdba1c;
-    filter: blur(60px);
-    z-index: var(--z-index-circle);
+    bottom: -20px;
+    left: -30px;
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: multiply;
+    background: no-repeat url('/images/pic-2.png') center/contain;
+    filter: opacity(0.8) brightness(1.2);
 }
 
-.circle-3 {
-    position: absolute;
-    top: 120px;
-    left: 50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #fdba1c;
-    filter: blur(60px);
-    z-index: var(--z-index-circle);
-}
+@media (min-width: 600px) {
+    .pic-1 {
+        width: 250px;
+        height: 250px;
+    }
 
-.circle-4 {
-    position: absolute;
-    top: 280px;
-    right: -150px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: #fdba1c;
-    filter: blur(120px);
-    z-index: var(--z-index-circle);
+    .pic-2 {
+        width: 250px;
+        height: 250px;
+    }
 }

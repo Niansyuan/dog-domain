@@ -14,6 +14,8 @@ const ContainerHome = () => {
                     with you.
                 </div>
             </div>
+            <div className={styles["pic-1"]}></div>
+            <div className={styles["pic-2"]}></div>
         </div>
     );
 }
