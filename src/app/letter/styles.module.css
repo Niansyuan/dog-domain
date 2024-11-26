@@ -10,6 +10,7 @@
     gap: 40px;
     color: #00000088;
     background: url('/images/background.png') 50% 0px/cover;
+    animation: 10s linear infinite alternate move;
 }
 
 .paragraph-left {
@@ -62,13 +63,39 @@
 
 .pic-5 {
     position: absolute;
-    bottom: 0;
-    right: 50%;
-    width: 180px;
-    height: 180px;
+    bottom: 60px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
     mix-blend-mode: multiply;
     background: no-repeat url('/images/pic-5.png') center/contain;
     filter: brightness(1) opacity(0.8);
+}
+
+.pic-6 {
+    position: absolute;
+    top: 600px;
+    right: -130px;
+    width: 130px;
+    height: 130px;
+    mix-blend-mode: multiply;
+    background: no-repeat url('/images/pic-6.png') center/contain;
+    filter: brightness(1) opacity(0.8);
+    transform: rotate(10deg);
+    animation: 8s linear infinite bike;
+}
+
+.pic-7 {
+    position: absolute;
+    top: 600px;
+    right: -130px;
+    width: 130px;
+    height: 130px;
+    mix-blend-mode: multiply;
+    background: no-repeat url('/images/pic-7.png') center/contain;
+    filter: brightness(1) opacity(0.8);
+    transform: rotate(10deg);
+    animation: 6s linear 2s infinite bike;
 }
 
 @media (min-width: 600px) {
@@ -84,8 +111,29 @@
     }
 
     .pic-5 {
-        width: 300px;
-        right: 25%;
-        height: 300px;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@keyframes move {
+    0% {
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-size: 150% 150%;
+    }
+}
+
+@keyframes bike {
+    0% {
+        right: -130px;
+    }
+
+    100% {
+        right: 100%;
     }
 }

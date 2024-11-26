@@ -14,6 +14,7 @@
     justify-content: space-between;
     background: url('/images/background.png') 50% 0px/cover;
     color:#00000088;
+    animation: 10s linear infinite alternate move;
 }
 
 .title {
@@ -38,6 +39,7 @@
     height: 120px;
     background: no-repeat url('/images/with-dog.jpg') 50% 0px/160px;
     flex-shrink: 0;
+    opacity: 0.8;
 }
 
 .content {
@@ -68,6 +70,10 @@
 }
 
 @media (min-width: 600px) {
+    .home {
+        gap: 50px;
+        justify-content: center;
+    }
     .pic-1 {
         width: 250px;
         height: 250px;
@@ -76,5 +82,15 @@
     .pic-2 {
         width: 250px;
         height: 250px;
+    }
+}
+
+@keyframes move {
+    0% {
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-size: 150% 150%;
     }
 }

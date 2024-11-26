@@ -40,13 +40,19 @@ const ContainerLetter = () => {
                 <div className={styles["row"]}>{CONTENT["row-20"]}</div>
             </div>
             <div className={styles["paragraph-right"]}>
-                    <div className={styles["row"]}>{CONTENT["row-21"]}</div>
-                    <div className={styles["row"]}>{CONTENT["row-22"]}</div>
-                    <div className={styles["row"]}>{CONTENT["row-23"]}</div>
-                </div>
+                <div className={styles["row"]}>{CONTENT["row-21"]}</div>
+                <div className={styles["row"]}>{CONTENT["row-22"]}</div>
+                <div className={styles["row"]}>{CONTENT["row-23"]}</div>
+            </div>
+            <div className={styles["paragraph-right"]}>
+                <div className={styles["row"]}>{CONTENT["row-24"]}</div>
+                <div className={styles["row"]}>{CONTENT["row-25"]}</div>
+            </div>
             <div className={styles["pic-3"]}></div>
             <div className={styles["pic-4"]}></div>
             <div className={styles["pic-5"]}></div>
+            <div className={styles["pic-6"]}></div>
+            <div className={styles["pic-7"]}></div>
         </div>
     );
 }
