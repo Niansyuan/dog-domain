@@ -8,7 +8,7 @@
     flex-direction: column;
     padding: 60px 40px;
     gap: 40px;
-    color:#fff;
+    color: #00000088;
     background: url('/images/background.png') 50% 0px/cover;
 }
 
@@ -35,6 +35,7 @@
 .row-emphasize {
     font-size: 20px;
     letter-spacing: 5px;
+    color:#fff;
 }
 
 .pic-3 {
@@ -45,7 +46,7 @@
     height: 200px;
     mix-blend-mode: multiply;
     background: no-repeat url('/images/pic-3.png') center/contain;
-    filter: brightness(1.2) saturate(1.2);
+    filter: brightness(1.2) opacity(0.8);
     transform: scaleX(-1);
 }
 
@@ -59,6 +60,17 @@
     background: no-repeat url('/images/pic-4.png') center/contain;
 }
 
+.pic-5 {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 180px;
+    height: 180px;
+    mix-blend-mode: multiply;
+    background: no-repeat url('/images/pic-5.png') center/contain;
+    filter: brightness(1) opacity(0.8);
+}
+
 @media (min-width: 600px) {
     .pic-3 {
         width: 250px;
@@ -69,5 +81,11 @@
         top: 300px;
         width: 200px;
         height: 200px;
+    }
+
+    .pic-5 {
+        width: 300px;
+        right: 25%;
+        height: 300px;
     }
 }

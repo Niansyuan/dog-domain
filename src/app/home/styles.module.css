@@ -12,9 +12,8 @@
     flex-direction: column;
     padding: 210px 40px;
     justify-content: space-between;
-    background-color: #fef4e2;
+    background: url('/images/background.png') 50% 0px/cover;
     color:#00000088;
-    box-shadow: #fef4e2 0px 4px 16px, #fef4e2 0px 8px 32px;
 }
 
 .title {

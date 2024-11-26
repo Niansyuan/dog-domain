@@ -46,6 +46,7 @@ const ContainerLetter = () => {
                 </div>
             <div className={styles["pic-3"]}></div>
             <div className={styles["pic-4"]}></div>
+            <div className={styles["pic-5"]}></div>
         </div>
     );
 }
